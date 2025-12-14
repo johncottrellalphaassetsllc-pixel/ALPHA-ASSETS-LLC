@@ -21,7 +21,7 @@ main {
 
 /* Styles the header section */
 header {
-    background-color: #1a4d2e; /* Deep Green header (use your color) */
+    background-color: #1a4d2e; /* Deep Green header (a professional look) */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -30,7 +30,7 @@ header {
 
 /* Styles the primary call to action */
 h2 {
-    color: #e55600; /* Orange/Red accent color */
+    color: #e55600; /* Orange/Red accent color for attention */
     text-align: center;
     margin-top: 0;
 }
