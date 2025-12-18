@@ -4,87 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpha Assets LLC | Real Estate Investment & Consulting</title>
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "RealEstateAgent",
-      "name": "Alpha Assets LLC",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "5534 Saint Joe Road",
-        "addressLocality": "Fort Wayne",
-        "addressRegion": "IN",
-        "postalCode": "46835",
-        "addressCountry": "US"
-      },
-      "telephone": "+17652671098",
-      "email": "JOHNCOTTRELL.ALPHAASSETSLLC@gmail.com",
-      "url": "https://alpha-assets-llc.netlify.app",
-      "description": "Professional real estate consulting and investment firm specializing in residential redevelopment and long-term leasing in Indiana."
-    }
-    </script>
-
     <style>
-        :root { --primary: #1a2a6c; --secondary: #b21f1f; --text: #333; --light: #f4f4f4; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; color: var(--text); background: white; }
-        header { background: var(--primary); color: white; padding: 4rem 1rem; text-align: center; }
-        .container { max-width: 900px; margin: auto; padding: 2rem; }
-        h1 { margin: 0; font-size: 2.5rem; letter-spacing: 1px; }
-        .tagline { font-style: italic; opacity: 0.9; }
-        .section { padding: 3rem 0; border-bottom: 1px solid #eee; }
-        .cta-box { background: var(--light); padding: 2rem; border-radius: 8px; text-align: center; margin-top: 2rem; }
-        .btn { display: inline-block; background: var(--secondary); color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; margin: 10px; }
-        .contact-info { font-size: 1.2rem; margin: 1rem 0; }
-        footer { text-align: center; padding: 2rem; font-size: 0.9rem; background: #222; color: #ccc; }
-        a { color: var(--primary); text-decoration: none; font-weight: bold; }
-        .phone-link { color: var(--secondary); font-size: 1.5rem; }
+        /* Base Styles */
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; line-height: 1.6; color: #333; background-color: #fff; }
+        
+        /* Integrated Header & Logo */
+        header { text-align: center; padding: 60px 20px; background-color: #f4f7f9; border-bottom: 1px solid #e1e8ed; }
+        .logo-box img { width: 300px; height: auto; max-width: 90%; }
+        .slogan { font-size: 1.25rem; color: #1a2a3a; margin-top: 15px; font-style: italic; font-weight: 500; }
+
+        /* Navigation Style */
+        nav { background: #1a2a3a; padding: 15px; text-align: center; sticky: top; }
+        nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; }
+        nav a:hover { color: #b8860b; }
+
+        /* Portfolio Section Styles */
+        .container { max-width: 1100px; margin: auto; padding: 40px 20px; }
+        .section-title { text-align: center; margin-bottom: 40px; }
+        .section-title h2 { font-size: 2.2rem; color: #1a2a3a; margin-bottom: 10px; }
+        
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .card { background: #fff; border: 1px solid #eee; border-radius: 12px; overflow: hidden; transition: transform 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .card:hover { transform: translateY(-5px); }
+        .card img { width: 100%; height: 250px; object-fit: cover; border-bottom: 4px solid #b8860b; }
+        .card-content { padding: 20px; }
+        .card-content h3 { color: #1a2a3a; margin-top: 0; }
+
+        footer { background: #1a2a3a; color: white; text-align: center; padding: 40px 20px; margin-top: 50px; }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Alpha Assets LLC</h1>
-    <p class="tagline">Strategic Real Estate Consulting & Investment</p>
-</header>
-
-<div class="container">
-    
-    <section class="section">
-        <h2>Our Mission</h2>
-        <p>Alpha Assets LLC is a premier real estate investment and consulting firm specializing in the <strong>Buy-Fix-and-Hold</strong> strategy across the Greater Indiana Area. As professional real estate consultants, we are dedicated to revitalizing local communities through property redevelopment and high-quality residential leasing.</p>
-    </section>
-
-    <section class="section">
-        <h2>What We Do</h2>
-        <ul>
-            <li><strong>Acquisition Consulting:</strong> Identifying undervalued residential assets for long-term growth.</li>
-            <li><strong>Property Redevelopment:</strong> Managing value-add renovations to improve neighborhood standards.</li>
-            <li><strong>Residential Leasing:</strong> Providing stable, high-quality rental housing for Indiana families.</li>
-        </ul>
-    </section>
-
-    <section class="section cta-box">
-        <h2>Get In Touch</h2>
-        <p>Whether you are a prospective tenant or seeking property consulting, we are here to help.</p>
-        
-        <div class="contact-info">
-            <a href="tel:7652671098" class="phone-link">(765) 267-1098</a>
+    <header>
+        <div class="logo-box">
+            <img src="images/logo.png" alt="Alpha Assets LLC Logo">
+            <p class="slogan">"Unlocking the Possibilities in Every Property."</p>
         </div>
+    </header>
 
-        <a href="sms:7652671098" class="btn">Text Us Directly</a>
-        <a href="mailto:JOHNCOTTRELL.ALPHAASSETSLLC@gmail.com" class="btn" style="background: var(--primary);">Email Us</a>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-        <p style="margin-top: 15px; font-size: 0.9rem; color: #666;">
-            5534 Saint Joe Road, Fort Wayne, IN 46835
-        </p>
-    </section>
+    <div class="container" id="about">
+        <div class="section-title">
+            <h2>Our Mission</h2>
+            <p>Alpha Assets LLC is an Indiana-based real estate firm specializing in the **Buy-Fix-and-Hold** strategy. We revitalize residential properties to provide families with high-quality, modern, and stable rental housing while improving local community value.</p>
+        </div>
+    </div>
 
-</div>
+    <div class="container" id="portfolio">
+        <div class="section-title">
+            <h2>Transformation Portfolio</h2>
+        </div>
+        <div class="gallery">
+            <div class="card">
+                <img src="images/exterior-reno.jpg" alt="Exterior Transformation">
+                <div class="card-content">
+                    <h3>Exterior Revitalization</h3>
+                    <p>Focusing on structural integrity and modern curb appeal to uplift the surrounding neighborhood.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/interior-reno.jpg" alt="Interior Remodel">
+                <div class="card-content">
+                    <h3>Modern Living Spaces</h3>
+                    <p>Deep interior renovations that prioritize comfort, functionality, and long-term residency.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<footer>
-    <p>&copy; 2025 Alpha Assets LLC. All Rights Reserved. | NAICS 531110</p>
-</footer>
+    <footer id="contact">
+        <h3>Alpha Assets LLC</h3>
+        <p>5534 Saint Joe Road, Fort Wayne, IN 46835</p>
+        <p>Email: contact@alphaassetsllc.netlify.app</p>
+        <div style="margin-top: 20px; font-size: 0.8rem; opacity: 0.7;">
+            &copy; 2025 Alpha Assets LLC. All Rights Reserved.
+        </div>
+    </footer>
 
 </body>
 </html>
