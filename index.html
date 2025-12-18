@@ -5,23 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpha Assets LLC | Real Estate Investment & Consulting</title>
     <style>
+        /* Base Styles */
         body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; line-height: 1.6; color: #333; background-color: #fff; }
         
+        /* Header & Logo Section */
         header { text-align: center; padding: 60px 20px; background-color: #f4f7f9; border-bottom: 1px solid #e1e8ed; }
-        /* Using .webp extension to match your uploaded file */
         .logo-box img { width: 300px; height: auto; max-width: 90%; display: block; margin: 0 auto; }
         .slogan { font-size: 1.25rem; color: #1a2a3a; margin-top: 15px; font-style: italic; font-weight: 500; }
 
+        /* Sticky Navigation */
         nav { background: #1a2a3a; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; }
         nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; }
         nav a:hover { color: #b8860b; }
 
+        /* Layout Containers */
         .container { max-width: 1100px; margin: auto; padding: 40px 20px; }
         .section-title { text-align: center; margin-bottom: 40px; }
         .section-title h2 { font-size: 2.2rem; color: #1a2a3a; margin-bottom: 10px; }
         
+        /* Portfolio Gallery */
         .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
         .card { background: #fff; border: 1px solid #eee; border-radius: 12px; overflow: hidden; transition: transform 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .card:hover { transform: translateY(-5px); }
         .card img { width: 100%; height: 250px; object-fit: cover; border-bottom: 4px solid #b8860b; }
         .card-content { padding: 20px; }
 
@@ -32,6 +37,7 @@
         .btn-email { background-color: #1a2a3a; color: white; border: 2px solid #1a2a3a; }
         .btn:hover { background-color: transparent; color: #1a2a3a; }
 
+        /* Footer */
         footer { background: #1a2a3a; color: white; text-align: center; padding: 60px 20px; margin-top: 50px; }
     </style>
 </head>
@@ -53,7 +59,7 @@
     <div class="container" id="about">
         <div class="section-title">
             <h2>Our Mission</h2>
-            <p>Alpha Assets LLC specializes in the <strong>Buy-Fix-and-Hold</strong> strategy. We revitalize properties to provide Indiana families with quality housing while building community value.</p>
+            <p>Alpha Assets LLC is an Indiana-based real estate firm specializing in the <strong>Buy-Fix-and-Hold</strong> strategy. We revitalize residential properties to provide families with high-quality, modern, and stable rental housing while improving local community value.</p>
         </div>
     </div>
 
@@ -66,14 +72,14 @@
                 <img src="images/exterior-reno.jpg" alt="Exterior Transformation">
                 <div class="card-content">
                     <h3>Exterior Revitalization</h3>
-                    <p>Uplifting neighborhoods through structural integrity and modern curb appeal.</p>
+                    <p>Focusing on structural integrity and modern curb appeal to uplift the surrounding neighborhood.</p>
                 </div>
             </div>
             <div class="card">
                 <img src="images/interior-reno.jpg" alt="Interior Remodel">
                 <div class="card-content">
                     <h3>Modern Living Spaces</h3>
-                    <p>Prioritizing comfort and functionality for our long-term residents.</p>
+                    <p>Deep interior renovations that prioritize comfort, functionality, and long-term residency.</p>
                 </div>
             </div>
         </div>
@@ -85,6 +91,7 @@
         
         <div class="btn-container">
             <a href="tel:7652671098" class="btn btn-phone">📞 Call (765) 267-1098</a>
+            
             <a href="mailto:johncottrell.alphaassets@gmail.com" class="btn btn-email">✉️ Email John Cottrell</a>
         </div>
 
@@ -95,4 +102,3 @@
 
 </body>
 </html>
-
