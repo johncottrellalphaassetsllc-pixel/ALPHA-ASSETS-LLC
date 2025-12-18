@@ -8,17 +8,18 @@
         /* Base Styles */
         body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; line-height: 1.6; color: #333; background-color: #fff; }
         
-        /* Integrated Header & Logo */
+        /* Header & Logo */
         header { text-align: center; padding: 60px 20px; background-color: #f4f7f9; border-bottom: 1px solid #e1e8ed; }
-        .logo-box img { width: 300px; height: auto; max-width: 90%; }
+        /* This looks for logo.png inside your images folder */
+        .logo-box img { width: 300px; height: auto; max-width: 90%; display: block; margin: 0 auto; }
         .slogan { font-size: 1.25rem; color: #1a2a3a; margin-top: 15px; font-style: italic; font-weight: 500; }
 
         /* Navigation Style */
-        nav { background: #1a2a3a; padding: 15px; text-align: center; sticky: top; }
+        nav { background: #1a2a3a; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; }
         nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; }
         nav a:hover { color: #b8860b; }
 
-        /* Portfolio Section Styles */
+        /* Portfolio & Content */
         .container { max-width: 1100px; margin: auto; padding: 40px 20px; }
         .section-title { text-align: center; margin-bottom: 40px; }
         .section-title h2 { font-size: 2.2rem; color: #1a2a3a; margin-bottom: 10px; }
@@ -28,9 +29,15 @@
         .card:hover { transform: translateY(-5px); }
         .card img { width: 100%; height: 250px; object-fit: cover; border-bottom: 4px solid #b8860b; }
         .card-content { padding: 20px; }
-        .card-content h3 { color: #1a2a3a; margin-top: 0; }
 
-        footer { background: #1a2a3a; color: white; text-align: center; padding: 40px 20px; margin-top: 50px; }
+        /* Contact Buttons */
+        .btn-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 20px; }
+        .btn { padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: 0.3s; display: inline-block; }
+        .btn-phone { background-color: #b8860b; color: white; }
+        .btn-email { background-color: #1a2a3a; color: white; }
+        .btn:hover { opacity: 0.9; transform: scale(1.05); }
+
+        footer { background: #1a2a3a; color: white; text-align: center; padding: 60px 20px; margin-top: 50px; }
     </style>
 </head>
 <body>
@@ -51,7 +58,7 @@
     <div class="container" id="about">
         <div class="section-title">
             <h2>Our Mission</h2>
-            <p>Alpha Assets LLC is an Indiana-based real estate firm specializing in the **Buy-Fix-and-Hold** strategy. We revitalize residential properties to provide families with high-quality, modern, and stable rental housing while improving local community value.</p>
+            <p>Alpha Assets LLC is an Indiana-based real estate firm specializing in the <strong>Buy-Fix-and-Hold</strong> strategy. We revitalize residential properties to provide families with high-quality, modern, and stable rental housing while improving local community value.</p>
         </div>
     </div>
 
@@ -78,10 +85,16 @@
     </div>
 
     <footer id="contact">
-        <h3>Alpha Assets LLC</h3>
+        <h2 style="margin-bottom: 10px;">Get In Touch</h2>
         <p>5534 Saint Joe Road, Fort Wayne, IN 46835</p>
-        <p>Email: contact@alphaassetsllc.netlify.app</p>
-        <div style="margin-top: 20px; font-size: 0.8rem; opacity: 0.7;">
+        
+        <div class="btn-container">
+            <a href="tel:7652671098" class="btn btn-phone">📞 Call (765) 267-1098</a>
+            
+            <a href="mailto:johncottrell.alphaassets@gmail.com" class="btn btn-email">✉️ Email John Cottrell</a>
+        </div>
+
+        <div style="margin-top: 40px; font-size: 0.85rem; opacity: 0.7;">
             &copy; 2025 Alpha Assets LLC. All Rights Reserved.
         </div>
     </footer>
